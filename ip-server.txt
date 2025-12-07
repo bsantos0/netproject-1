@@ -1,4 +1,7 @@
 server1 = 10.0.0.10
 server2 = 10.0.0.11
+cctv Network = 10.1.11.0/24
+
 
 server vlan 100
+server vlan cctv 200
