@@ -1,4 +1,4 @@
-name : monitoring otomatis
+name : Ping Otomatis
 
 #robot bekerja setiap ada push ke main
 on:
