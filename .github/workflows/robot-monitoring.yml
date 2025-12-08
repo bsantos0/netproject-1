@@ -18,8 +18,7 @@ on:
     - cron: '48 3 * * *' 
     # Atau jalan setiap 15 menit (Hati-hati, GitHub gratisan kadang telat)
     # - cron: '*/15 * * * *'
-env:
-  web: ${{ secrets.ALAMAT_WEB}}
+
 #List yang dikerjakan robot
 
 jobs:
