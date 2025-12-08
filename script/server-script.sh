@@ -2,7 +2,7 @@
 
 # 1. Definisi Array (Daftar Server yang mau dicek)
 # Anda bisa ganti IP/Domain di dalam tanda kutip ini
-LIST_SERVER=("8.8.8.8" "1.1.1.1" "google.com" "192.168.1.1" "detik.com")
+LIST_SERVER=("8.8.8.8" "1.1.1.1" "google.com" "outlook.office365.com" "www.detik.com")
 
 echo "======================================="
 echo "   MONITORING SERVER (Total: ${#LIST_SERVER[@]})"
