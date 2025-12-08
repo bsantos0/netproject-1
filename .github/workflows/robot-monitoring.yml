@@ -1,0 +1,26 @@
+name : monitoring otomatis
+
+#robot bekerja setiap ada push ke main
+on:
+  push:
+    branches:
+      - main
+
+#List yang dikerjakan robot
+jobs:
+  pekerjaan-satu:
+    #robot menggunakan ubuntu terbaru
+    runs-on: ubuntu-latest
+    steps:
+      # langkah pertama robot mengambil script dari repository
+      - name: Ambil kode
+        uses: actions/checkout@v3
+
+      # langkah kedua robot memberi ijin eksekusi script
+      - name: beri ijin script
+        run : chmod +x ./script/ping-server-l.sh
+        
+      # langkah ketiga robot menjalankan script
+      - name: jalankan monitoring server
+        run: ./script/ping-server-l.sh
+          
