@@ -18,11 +18,11 @@ jobs:
 
       # --- TAMBAHKAN LANGKAH INI (PENCUCI HASIL) ---
       - name: Hapus Karakter Windows (CRLF Fix)
-        run: sed -i 's/\r$//' ./script/ping-server-l.sh
+        run: sed -i 's/\r$//' ./script/web-monitoring.sh
 
       # langkah kedua robot memberi ijin eksekusi script
       - name: beri ijin script
-        run : chmod +x ./script/ping-server-l.sh
+        run : chmod +x ./script/web-monitoring.sh
         
       # langkah ketiga robot menjalankan script
       - name: jalankan monitoring server
