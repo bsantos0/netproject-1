@@ -14,7 +14,7 @@ for TARGET in "${LIST_SERVER[@]}"
 do
     # Note: Gunakan -n 1 untuk Windows, ganti -c 1 jika di Linux Server
     # -w 1000 artinya: Timeout 1000ms (1 detik). Jadi kalau RTO tidak usah tunggu lama.
-    ping -c 1 -w 1000 $TARGET > /dev/null 2>&1
+    ping -c 1 -w 1 $TARGET > /dev/null 2>&1
 
     # 3. Cek Status
     if [ $? -eq 0 ]
