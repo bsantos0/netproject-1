@@ -26,5 +26,5 @@ jobs:
         
       # langkah ketiga robot menjalankan script
       - name: jalankan monitoring server
-        run: ./script/ping-server-l.sh
+        run: ./script/web-monitoring.sh
           
