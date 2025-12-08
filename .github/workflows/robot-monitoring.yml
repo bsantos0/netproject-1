@@ -18,9 +18,9 @@ jobs:
 
       # langkah kedua robot memberi ijin eksekusi script
       - name: beri ijin script
-        run : chmod +x ./script/ping-server-l.sh
+        run : chmod +x ../script/ping-server-l.sh
         
       # langkah ketiga robot menjalankan script
       - name: jalankan monitoring server
-        run: ./script/ping-server-l.sh
+        run: ../script/ping-server-l.sh
           
